@@ -1,0 +1,296 @@
+/*section slider*/
+.slider-section {
+
+	.main-slider {
+		overflow: hidden;
+	}
+
+	.slick-slide {
+		position: relative;
+		height: 281px;
+		overflow: hidden;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		&:before {
+			position: absolute;
+			content: "";
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.6)
+		}
+
+		img {
+			min-height: auto;
+			height: 100%;
+			min-width: auto;
+			max-width: none;
+			width: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+	}
+	.slider-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		padding: 27px 0 27px;
+		border: 2px solid rgba(242,238,235, 0.87);
+		.main-title {
+			min-width: 235px;
+			font: 400 22px / 30px $OpenSans;
+			color: #f2eeeb;
+			text-transform: uppercase;
+			text-align: center;
+			
+			span {
+				color: #ffac08;
+				font-weight: 700;
+			}
+		}
+	}
+}
+/*end section slider*/
+/*section advantages*/
+.advantages {
+	@include site-container;
+	padding: 24px 0;
+	background-image: linear-gradient(to top, #e1ddda 0%, #f2eeeb 100%);
+	box-shadow: -0.3px 4px 5px rgba(0, 0, 0, 0.22);
+
+	.advantages-title {
+		margin: 0 auto 23px;
+		text-align: center;
+		color: #370909;
+		font: 400 18px / 25px $OpenSans;
+		text-transform: uppercase;
+		
+		span {
+			display: block;
+			font-weight: 700;
+		}
+	}
+
+	.advantages-list {
+		@include border-box;
+		margin: 0 auto;
+		text-align: center;
+		overflow: hidden;
+
+		li {
+			display: block;
+			margin: 32px auto;
+			text-align: left;
+
+			.icon-wrapper {
+				float: left;
+				min-width: 65px;
+				margin: 0 18px 0 0;
+
+				.fa {
+					color: #fff;
+					font-size: 48px;
+					@include transition;
+				}
+			}
+
+			.title {
+				overflow: hidden;
+				color: #370909;
+				font: 400 18px / 22px $OpenSans;
+			}
+
+			&:hover {
+				.icon-wrapper {
+					.fa {
+						color: #370909;
+					}
+				}
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+/*end section advantages*/
+/*section about*/
+.about {
+	@include site-container;
+	padding: 24px 0 31px;
+	background: url("../images/about-mobile.jpg") no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+
+	&:before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.6)
+	}
+
+	.about-title {
+		margin: 0 auto 22px;
+		text-align: center;
+		color: #e1ddda;
+		font: 700 18px / 25px $OpenSans;
+		text-transform: uppercase;
+	}
+
+	p {
+		color: #e1ddda;
+		font: 400 16px / 25px $OpenSans;
+
+		span {
+			color: #ffac08;
+			font-weight: 700;
+		}
+	}
+
+	.about-phone {
+		overflow: hidden;
+		margin: 10px auto 0;
+		color: #e1ddda;
+		font: 400 16px / 25px $OpenSans;
+
+		span {
+			display: block;
+			margin: 5px 0 0 0;
+			color: #ffac08;
+			font-weight: 700;
+		}
+
+		.fa {
+			float: left;
+			margin: 0 10px 0 0;
+			font-size: 30px;
+			color: #ffac08;
+		}
+	}
+}
+/*end section about*/
+/*schol section */
+.school {
+	padding: 24px 0 19px;
+	background-color: #fff;
+	box-shadow: -0.3px 4px 5px rgba(0, 0, 0, 0.14);
+
+	.school-main-title {
+		margin: 0 auto 17px;
+		text-align: center;
+		color: #370909;
+		font: 18px / 25px $OpenSans;
+		text-transform: uppercase;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	.school-list {
+		@include border-box;
+		margin: 0 auto;
+		text-align: center;
+
+		li {
+			display: block;
+			overflow: hidden;
+			margin: 15px auto;
+			text-align: left;
+			clear: both;
+
+			.img-wrapper {
+				float: left;
+				margin: 0 20px 0 0;
+				width: 100px;
+				height: 100px;
+
+				img {
+					width: auto;
+					height: 100%;
+				}
+			}
+
+			.school-name {
+				overflow: hidden;
+				margin: 20px 0 0;
+				color: #370909;
+				font: 400 16px / 22px $OpenSans;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+/*end schol section */
+
+/*section preffoter*/
+.preffoter {
+	padding: 24px 0 30px;
+	background-color: #e1ddda;
+
+	.prefooter-logo {
+		display: none;
+	}
+
+	.preffoter-phone {
+		width: 210px;
+		margin: 0 auto;
+		text-align: center;
+		overflow: hidden;
+		.fa {
+			float: left;
+			margin: 0 10px 0 0;
+			font-size: 37px;
+			color: #6c6460;
+		}
+		
+		a {
+			display: block;
+			margin: 6px 0 0;
+			color: #6c6460;
+			font: 700 18px / 23px $OpenSans;
+		}
+	}
+
+	.preffoter-social-icons {
+		@include border-box;
+		margin: 28px auto 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin: 0 12px;
+
+			.fa {
+				font-size: 49px;
+				color: #6c6460;
+			}
+		}
+	}
+}
+/*end section preffoter*/

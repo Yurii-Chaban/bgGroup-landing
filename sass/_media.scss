@@ -1,0 +1,90 @@
+@media (min-width: 768px) {
+	.advantages {
+		.advantages-list {
+			li {
+				width: 27%;
+				display: inline-block;
+				margin: 0;
+				padding: 0 20px;
+				text-align: center;
+				vertical-align: top;
+				.icon-wrapper {
+					float: inherit;
+					margin: 0 auto 32px;
+
+					.fa {
+						font-size: 70px;
+					}
+				}
+				&:nth-child(2) {
+					border-left: 2px solid rgba(255, 255, 255, 0.5);
+					border-right: 2px solid rgba(255, 255, 255, 0.5);
+				}
+				&:first-child {
+					margin: 0;
+				}
+
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+
+	header {
+		height: 106px;
+		.logo {
+			left: 0;
+			transform: none;
+			width: 137px;
+			height: 136px;
+		}
+
+		.call-us-block {
+			display: none;
+		}
+
+		.desctop-phone,
+		.social-icons-desctop {
+			display: block;
+		}
+		.desctop-phone {
+			float: left;
+			margin: 42px 0 0 140px;
+			overflow: hidden;
+
+			.fa {
+				float: left;
+				margin: 0 10px 0 0;
+				color: #6c6460;
+				font-size: 30px;
+			}
+
+			a {
+				display: block;
+				overflow: hidden;
+				margin:5px 0 0;
+				color: #6c6460;
+				font: 700 18px / 22px $OpenSans;
+			}
+		}
+
+		.social-icons-desctop {
+			float: right;
+			margin: 28px 0 0;
+		.social-icons-desctop {
+			
+		}	
+		}
+	}
+
+
+	.slider-section {
+		.slick-slide {
+			height: 485px;
+		}
+	}
+}
