@@ -59,12 +59,12 @@ header {
 	}
 	.desctop-phone {
 		float: left;
-		margin: 42px 0 0 160px;
+		margin: 40px 0 0 158px;
 		overflow: hidden;
 
 		.fa {
 			float: left;
-			margin: 0 10px 0 0;
+			margin: 0 6px 0 0;
 			color: #6c6460;
 			font-size: 30px;
 		}
@@ -72,7 +72,7 @@ header {
 		a {
 			display: block;
 			overflow: hidden;
-			margin:5px 0 0;
+			margin: 3px 0 0;
 			color: #6c6460;
 			font: 700 18px / 22px $OpenSans;
 		}
@@ -83,9 +83,14 @@ header {
 		margin: 34px 0 0;
 		.social-list {
 			@include border-box;
+			margin: -2px -6px 0 0;
 			li {
 				display: inline-block;
-				margin: 0 11px;
+				margin: 0;
+
+				&:first-child {
+					margin: 0 19px 0 0;
+				}
 
 				.fa {
 					font-size: 40px;
@@ -114,7 +119,8 @@ header {
 	}
 
 	.slider-content {
-		padding: 45px 20px;
+		padding: 47px 9px 47px 26px;
+		top: 48%;
 		.main-title {
 			min-width: 505px;
 			font-size: 35px;
@@ -125,10 +131,13 @@ header {
 
 	// advantages
 	.advantages {
+		padding: 24px 0 60px;
 		.advantages-title {
-			margin-bottom: 60px;
 			font-size: 25px;
 			line-height: 40px;
+			margin: 5px auto 54px;
+			padding-left: 13px;
+
 
 			span {
 				display: inline;
@@ -136,10 +145,15 @@ header {
 		}
 
 		.advantages-list {
-			margin: 0 auto 60px;
+			margin: 0 auto;
 			li {
 				width: auto;
-				padding: 0 45px;
+				padding: 24px 45px;
+
+				.icon-wrapper {
+					margin: 0 auto 36px;
+				}
+
 				.title {
 					width: 225px;
 				}
@@ -149,24 +163,39 @@ header {
 
 	// about
 	.about {
-		padding-bottom: 50px;
+		padding-bottom: 44px;
 		.about-title {
-			margin: 40px 0 50px;
+			margin: 32px 0 40px;
+			padding-left: 5px;
 			text-align: left;
 			font-size: 25px;
 			line-height: 30px;
+		}
+
+		p {
+			padding-left: 5px;
+		}
+
+		.about-phone {
+			margin: 0 auto;
+
+			.fa {
+				margin: 4px 8px 0 9px;
+				font-size: 27px;
+			}
 		}
 	} 
 
 	// school
 	.school {
+		padding: 24px 0 49px;
 		.school-main-title {
-			margin: 30px auto 50px;
+			margin: 12px auto 55px;
 			font-size: 25px;
 			line-height: 40px;
 		}
 		.school-list {
-			margin: 0 auto 50px;
+			margin: 0 auto;
 			li {
 				display: inline-block;
 				width: 180px;
@@ -184,9 +213,9 @@ header {
 
 				.img-wrapper {
 					float: inherit;
-					margin: 0 auto 48px;
-					width: 139px;
-					height: 139px;
+					margin: 0 auto 45px;
+					width: 175px;
+					height: 138px;
 				}
 			}
 		}
@@ -195,26 +224,60 @@ header {
 	// preffoter 
 	.preffoter {
 		overflow: hidden;
+		padding: 0;
 		.prefooter-logo {
 			display: block;
+			height: 152px;
+			overflow: hidden;
 			float: left;
-			margin-right: 40px;
+			margin: 2px 20px 0 -16px;
 		}
 
 		.preffoter-phone {
 			float: left;
 			overflow: hidden;
 			margin: 65px 0 0 0;
+
+			.fa {
+				margin: 0px 0 0 5px;
+				font-size: 29px;
+			}
+
+			a {
+				margin: 1px 0 0;
+			}
 		}
 
 		.preffoter-social-icons {
 			float: right;
-			margin: 63px 0 0 0;
+			margin: 62px 0 0 0;
+
+			.preffoter-list {
+				margin: 0 -9px 0 0;
+			}
 
 			li {
-				margin: 0 5px;
+				margin: 0;
+
+				&:first-child {
+					margin: 0 10px 0 0;
+				}
 				.fa {
 					font-size: 30px;
+				}
+			}
+		}
+	}
+	// footer 
+	footer {
+		.copyright {
+			.copyright-sign {
+				padding: 1px 0 0 17px;
+
+				a {
+					&:nth-of-type(2) {
+						letter-spacing: 0.5px;
+					}
 				}
 			}
 		}
