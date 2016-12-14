@@ -245,11 +245,17 @@
 				text-transform: uppercase;
 				@include transition;
 				cursor: pointer;
+
+				a {
+					color: #370909;
+				}
 			}
 
 			&:hover {
 				.school-name {
-					color: #713389;
+					a {
+						color: #713389;
+					}
 				}
 			}
 		}

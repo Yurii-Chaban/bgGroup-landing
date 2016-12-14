@@ -540,44 +540,48 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   transition: all .3s ease-in-out;
   cursor: pointer;
 }
-/* line 251, ../sass/_main-page.scss */
-.school .school-list li:hover .school-name {
+/* line 249, ../sass/_main-page.scss */
+.school .school-list li .school-name a {
+  color: #370909;
+}
+/* line 256, ../sass/_main-page.scss */
+.school .school-list li:hover .school-name a {
   color: #713389;
 }
 
 /*end schol section */
 /*section preffoter*/
-/* line 261, ../sass/_main-page.scss */
+/* line 267, ../sass/_main-page.scss */
 .preffoter {
   padding: 24px 0 30px;
   background-color: #e1ddda;
 }
-/* line 265, ../sass/_main-page.scss */
+/* line 271, ../sass/_main-page.scss */
 .preffoter .prefooter-logo {
   display: none;
 }
-/* line 269, ../sass/_main-page.scss */
+/* line 275, ../sass/_main-page.scss */
 .preffoter .preffoter-phone {
   width: 210px;
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
 }
-/* line 274, ../sass/_main-page.scss */
+/* line 280, ../sass/_main-page.scss */
 .preffoter .preffoter-phone .fa {
   float: left;
   margin: 0 10px 0 0;
   font-size: 37px;
   color: #6c6460;
 }
-/* line 281, ../sass/_main-page.scss */
+/* line 287, ../sass/_main-page.scss */
 .preffoter .preffoter-phone a {
   display: block;
   margin: 6px 0 0;
   color: #6c6460;
   font: 700 18px/23px "Open Sans", sans-serif;
 }
-/* line 289, ../sass/_main-page.scss */
+/* line 295, ../sass/_main-page.scss */
 .preffoter .preffoter-social-icons {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -586,12 +590,12 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   margin: 28px auto 0;
   text-align: center;
 }
-/* line 293, ../sass/_main-page.scss */
+/* line 299, ../sass/_main-page.scss */
 .preffoter .preffoter-social-icons li {
   display: inline-block;
   margin: 0 12px;
 }
-/* line 297, ../sass/_main-page.scss */
+/* line 303, ../sass/_main-page.scss */
 .preffoter .preffoter-social-icons li .fa {
   font-size: 49px;
   color: #6c6460;
@@ -600,11 +604,11 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 303, ../sass/_main-page.scss */
+/* line 309, ../sass/_main-page.scss */
 .preffoter .preffoter-social-icons li .fa-youtube-square:hover {
   color: #370909;
 }
-/* line 308, ../sass/_main-page.scss */
+/* line 314, ../sass/_main-page.scss */
 .preffoter .preffoter-social-icons li .fa-facebook-square:hover {
   color: #3b5998;
 }
