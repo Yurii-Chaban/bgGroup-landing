@@ -243,6 +243,14 @@
 				color: #370909;
 				font: 400 16px / 22px $OpenSans;
 				text-transform: uppercase;
+				@include transition;
+				cursor: pointer;
+			}
+
+			&:hover {
+				.school-name {
+					color: #713389;
+				}
 			}
 		}
 	}
@@ -289,6 +297,17 @@
 			.fa {
 				font-size: 49px;
 				color: #6c6460;
+				@include transition;
+			}
+			.fa-youtube-square {
+				&:hover {
+					color: #370909;
+				}
+			}
+			.fa-facebook-square {
+				&:hover {
+					color: #3b5998;
+				}
 			}
 		}
 	}

@@ -124,8 +124,8 @@ header .logo {
   left: 50%;
   z-index: 9;
   transform: translateX(-50%);
-  width: 77px;
-  height: 81px;
+  width: 90px;
+  height: auto;
 }
 /* line 16, ../sass/_header.scss */
 header .logo img {
@@ -534,41 +534,50 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   color: #370909;
   font: 400 16px/22px "Open Sans", sans-serif;
   text-transform: uppercase;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+/* line 251, ../sass/_main-page.scss */
+.school .school-list li:hover .school-name {
+  color: #713389;
 }
 
 /*end schol section */
 /*section preffoter*/
-/* line 253, ../sass/_main-page.scss */
+/* line 261, ../sass/_main-page.scss */
 .preffoter {
   padding: 24px 0 30px;
   background-color: #e1ddda;
 }
-/* line 257, ../sass/_main-page.scss */
+/* line 265, ../sass/_main-page.scss */
 .preffoter .prefooter-logo {
   display: none;
 }
-/* line 261, ../sass/_main-page.scss */
+/* line 269, ../sass/_main-page.scss */
 .preffoter .preffoter-phone {
   width: 210px;
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
 }
-/* line 266, ../sass/_main-page.scss */
+/* line 274, ../sass/_main-page.scss */
 .preffoter .preffoter-phone .fa {
   float: left;
   margin: 0 10px 0 0;
   font-size: 37px;
   color: #6c6460;
 }
-/* line 273, ../sass/_main-page.scss */
+/* line 281, ../sass/_main-page.scss */
 .preffoter .preffoter-phone a {
   display: block;
   margin: 6px 0 0;
   color: #6c6460;
   font: 700 18px/23px "Open Sans", sans-serif;
 }
-/* line 281, ../sass/_main-page.scss */
+/* line 289, ../sass/_main-page.scss */
 .preffoter .preffoter-social-icons {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -577,15 +586,27 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   margin: 28px auto 0;
   text-align: center;
 }
-/* line 285, ../sass/_main-page.scss */
+/* line 293, ../sass/_main-page.scss */
 .preffoter .preffoter-social-icons li {
   display: inline-block;
   margin: 0 12px;
 }
-/* line 289, ../sass/_main-page.scss */
+/* line 297, ../sass/_main-page.scss */
 .preffoter .preffoter-social-icons li .fa {
   font-size: 49px;
   color: #6c6460;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 303, ../sass/_main-page.scss */
+.preffoter .preffoter-social-icons li .fa-youtube-square:hover {
+  color: #370909;
+}
+/* line 308, ../sass/_main-page.scss */
+.preffoter .preffoter-social-icons li .fa-facebook-square:hover {
+  color: #3b5998;
 }
 
 /*end section preffoter*/
@@ -621,42 +642,49 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   .advantages .advantages-list li:last-child {
     margin: 0;
   }
+
+  /* line 34, ../sass/_media.scss */
+  .about {
+    background: url("../images/about-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 @media (min-width: 1024px) {
-  /* line 37, ../sass/_media.scss */
+  /* line 43, ../sass/_media.scss */
   header {
     height: 106px;
   }
-  /* line 39, ../sass/_media.scss */
+  /* line 45, ../sass/_media.scss */
   header .logo {
     left: 0;
     transform: none;
-    width: 137px;
-    height: 136px;
+    width: 167px;
+    height: auto;
   }
-  /* line 46, ../sass/_media.scss */
+  /* line 52, ../sass/_media.scss */
   header .call-us-block {
     display: none;
   }
-  /* line 50, ../sass/_media.scss */
+  /* line 56, ../sass/_media.scss */
   header .desctop-phone,
   header .social-icons-desctop {
     display: block;
   }
-  /* line 54, ../sass/_media.scss */
+  /* line 60, ../sass/_media.scss */
   header .desctop-phone {
     float: left;
-    margin: 42px 0 0 140px;
+    margin: 42px 0 0 160px;
     overflow: hidden;
   }
-  /* line 59, ../sass/_media.scss */
+  /* line 65, ../sass/_media.scss */
   header .desctop-phone .fa {
     float: left;
     margin: 0 10px 0 0;
     color: #6c6460;
     font-size: 30px;
   }
-  /* line 66, ../sass/_media.scss */
+  /* line 72, ../sass/_media.scss */
   header .desctop-phone a {
     display: block;
     overflow: hidden;
@@ -664,14 +692,153 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
     color: #6c6460;
     font: 700 18px/22px "Open Sans", sans-serif;
   }
-  /* line 75, ../sass/_media.scss */
+  /* line 81, ../sass/_media.scss */
   header .social-icons-desctop {
     float: right;
-    margin: 28px 0 0;
+    margin: 34px 0 0;
+  }
+  /* line 84, ../sass/_media.scss */
+  header .social-icons-desctop .social-list {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 86, ../sass/_media.scss */
+  header .social-icons-desctop .social-list li {
+    display: inline-block;
+    margin: 0 11px;
+  }
+  /* line 90, ../sass/_media.scss */
+  header .social-icons-desctop .social-list li .fa {
+    font-size: 40px;
+    color: #6c6460;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  /* line 96, ../sass/_media.scss */
+  header .social-icons-desctop .social-list li .fa-youtube-square:hover {
+    color: #370909;
+  }
+  /* line 101, ../sass/_media.scss */
+  header .social-icons-desctop .social-list li .fa-facebook-square:hover {
+    color: #3b5998;
   }
 
-  /* line 86, ../sass/_media.scss */
+  /* line 112, ../sass/_media.scss */
   .slider-section .slick-slide {
     height: 485px;
+  }
+  /* line 116, ../sass/_media.scss */
+  .slider-section .slider-content {
+    padding: 45px 20px;
+  }
+  /* line 118, ../sass/_media.scss */
+  .slider-section .slider-content .main-title {
+    min-width: 505px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  /* line 128, ../sass/_media.scss */
+  .advantages .advantages-title {
+    margin-bottom: 60px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  /* line 133, ../sass/_media.scss */
+  .advantages .advantages-title span {
+    display: inline;
+  }
+  /* line 138, ../sass/_media.scss */
+  .advantages .advantages-list {
+    margin: 0 auto 60px;
+  }
+  /* line 140, ../sass/_media.scss */
+  .advantages .advantages-list li {
+    width: auto;
+    padding: 0 45px;
+  }
+  /* line 143, ../sass/_media.scss */
+  .advantages .advantages-list li .title {
+    width: 225px;
+  }
+
+  /* line 151, ../sass/_media.scss */
+  .about {
+    padding-bottom: 50px;
+  }
+  /* line 153, ../sass/_media.scss */
+  .about .about-title {
+    margin: 40px 0 50px;
+    text-align: left;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  /* line 163, ../sass/_media.scss */
+  .school .school-main-title {
+    margin: 30px auto 50px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  /* line 168, ../sass/_media.scss */
+  .school .school-list {
+    margin: 0 auto 50px;
+  }
+  /* line 170, ../sass/_media.scss */
+  .school .school-list li {
+    display: inline-block;
+    width: 180px;
+    margin: 0 6px;
+    vertical-align: top;
+    text-align: center;
+  }
+  /* line 177, ../sass/_media.scss */
+  .school .school-list li:first-child {
+    margin-left: 0;
+  }
+  /* line 181, ../sass/_media.scss */
+  .school .school-list li:last-child {
+    margin-right: 0;
+  }
+  /* line 185, ../sass/_media.scss */
+  .school .school-list li .img-wrapper {
+    float: inherit;
+    margin: 0 auto 48px;
+    width: 139px;
+    height: 139px;
+  }
+
+  /* line 196, ../sass/_media.scss */
+  .preffoter {
+    overflow: hidden;
+  }
+  /* line 198, ../sass/_media.scss */
+  .preffoter .prefooter-logo {
+    display: block;
+    float: left;
+    margin-right: 40px;
+  }
+  /* line 204, ../sass/_media.scss */
+  .preffoter .preffoter-phone {
+    float: left;
+    overflow: hidden;
+    margin: 65px 0 0 0;
+  }
+  /* line 210, ../sass/_media.scss */
+  .preffoter .preffoter-social-icons {
+    float: right;
+    margin: 63px 0 0 0;
+  }
+  /* line 214, ../sass/_media.scss */
+  .preffoter .preffoter-social-icons li {
+    margin: 0 5px;
+  }
+  /* line 216, ../sass/_media.scss */
+  .preffoter .preffoter-social-icons li .fa {
+    font-size: 30px;
   }
 }
