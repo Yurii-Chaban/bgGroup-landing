@@ -11,3 +11,59 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+
+body {
+	font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+  outline: none;
+}
+
+$OpenSans: 'Open Sans', sans-serif;
+$HelveticaNeueLTPro: 'HelveticaNeueLTPro', sans-serif;
+
+@mixin site-container {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	background-size: contain;
+	background-position: center;
+	@include border-box;
+}
+@mixin transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.wrapper {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	@include border-box;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@import "header";
+@import "footer";
+@import "main-page";
+@import "media";

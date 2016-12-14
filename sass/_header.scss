@@ -1,0 +1,56 @@
+header {
+	.call-us-block {
+		float: right;
+		margin: -10px 0 0 0;
+		vertical-align: middle;
+
+		span {
+			display: inline-block;
+			line-height: 33px;
+			vertical-align: middle;
+			color: #2b2318;
+			font-size: 29px;
+		}
+	}
+	#info-mobile {
+		width: 244px;
+		height: auto;
+		background-color: white;
+		box-shadow: -0.3px 5px 10px rgba(0, 0, 0, 0.38);
+		-webkit-border-radius: 10px;
+		-webkit-border-top-right-radius: 0;
+		-moz-border-radius: 10px;
+		-moz-border-radius-topright: 0;
+		border-radius: 10px;
+		border-top-right-radius: 0;
+		clear:none;
+		float: right;
+		position: absolute;
+		top: 26px;
+		right: 0;
+		z-index: 8;
+		@include transition;
+
+		a {
+			display: block;
+			margin: 6px auto;
+			padding: 13px 5px;
+			text-align: center;
+			.phone {
+				color: #2b2318;
+				font: 300 28px / 35px $OpenSans;
+			}
+		}
+	}
+	.call-us-block > label {
+		float: right;
+		position: relative;
+		z-index: 2;
+		margin: 5px 0 0;
+		color: #000; 
+		cursor: pointer;
+		@include transition;
+	}
+	input{display:none;}
+	input:checked+#info-mobile{display:none;}
+}

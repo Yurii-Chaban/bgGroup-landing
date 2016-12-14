@@ -70,3 +70,150 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
+/* line 16, ../sass/main-styles.scss */
+body {
+  font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 23, ../sass/main-styles.scss */
+* {
+  outline: none;
+}
+
+/* line 53, ../sass/main-styles.scss */
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* line 61, ../sass/main-styles.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 2, ../sass/_header.scss */
+header .call-us-block {
+  float: right;
+  margin: -10px 0 0 0;
+  vertical-align: middle;
+}
+/* line 7, ../sass/_header.scss */
+header .call-us-block span {
+  display: inline-block;
+  line-height: 33px;
+  vertical-align: middle;
+  color: #2b2318;
+  font-size: 29px;
+}
+/* line 15, ../sass/_header.scss */
+header #info-mobile {
+  width: 244px;
+  height: auto;
+  background-color: white;
+  box-shadow: -0.3px 5px 10px rgba(0, 0, 0, 0.38);
+  -webkit-border-radius: 10px;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius: 10px;
+  -moz-border-radius-topright: 0;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  clear: none;
+  float: right;
+  position: absolute;
+  top: 26px;
+  right: 0;
+  z-index: 8;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 34, ../sass/_header.scss */
+header #info-mobile a {
+  display: block;
+  margin: 6px auto;
+  padding: 13px 5px;
+  text-align: center;
+}
+/* line 39, ../sass/_header.scss */
+header #info-mobile a .phone {
+  color: #2b2318;
+  font: 300 28px/35px "Open Sans", sans-serif;
+}
+/* line 45, ../sass/_header.scss */
+header .call-us-block > label {
+  float: right;
+  position: relative;
+  z-index: 2;
+  margin: 5px 0 0;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 54, ../sass/_header.scss */
+header input {
+  display: none;
+}
+/* line 55, ../sass/_header.scss */
+header input:checked + #info-mobile {
+  display: none;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #777;
+}
+/* line 7, ../sass/_footer.scss */
+footer .copyright {
+  clear: both;
+  margin: 0 auto;
+  padding: 19px 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #777;
+}
+/* line 14, ../sass/_footer.scss */
+footer .copyright .copyright-sign {
+  margin: 0 auto;
+  color: #fff;
+  font: 400 13px/22px "Open Sans", sans-serif;
+}
+/* line 19, ../sass/_footer.scss */
+footer .copyright .copyright-sign a {
+  color: #fff;
+}
+/* line 22, ../sass/_footer.scss */
+footer .copyright .copyright-sign a:hover {
+  text-decoration: underline;
+}
+/* line 26, ../sass/_footer.scss */
+footer .copyright .copyright-sign a:nth-of-type(2) {
+  font: 400 13px/22px "HelveticaNeueLTPro", sans-serif;
+}
